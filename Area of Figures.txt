@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string figura = Console.ReadLine();
+
+            double S = 0;
+
+            if (figura == "square")
+            {
+                double num = double.Parse(Console.ReadLine());
+                S = num * num;
+            }
+            else if (figura == "rectangle")
+            {
+                double num = double.Parse(Console.ReadLine());
+                double num1 = double.Parse(Console.ReadLine());
+                S = num * num1;
+            }
+            else if (figura == "circle")
+            {
+                double num = double.Parse(Console.ReadLine());
+                S = Math.PI * Math.Pow(num, 2);
+            }
+            else if (figura == "triangle")
+            {
+                double num = double.Parse(Console.ReadLine());
+                double num1 = double.Parse(Console.ReadLine());
+                S = num * num1 / 2;
+            }
+
+            Console.WriteLine(S);
+        }
+    }
+}

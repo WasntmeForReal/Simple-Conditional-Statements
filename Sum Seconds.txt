@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int first = int.Parse(Console.ReadLine());
+            int second = int.Parse(Console.ReadLine());
+            int third = int.Parse(Console.ReadLine());
+
+            int sum = first + second + third;
+
+            if (sum < 60)
+            {
+                Console.WriteLine($"0:{sum:d2}");
+            }
+            else if (sum >= 60 && sum < 120)
+            {
+                sum -= 60;
+                Console.WriteLine($"1:{sum:d2}");
+            }
+            else if (sum >= 120)
+            {
+                sum -= 120;
+                Console.WriteLine($"2:{sum:d2}");
+            }
+        }
+    }
+}

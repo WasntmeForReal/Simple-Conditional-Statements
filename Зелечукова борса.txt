@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace _17.Зеленчукова_Борса
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var VegKgPrice = double.Parse(Console.ReadLine());
+            var FruitKgPrice = double.Parse(Console.ReadLine());
+            var VegKg = double.Parse(Console.ReadLine());
+            var FruitKg = double.Parse(Console.ReadLine());
+            var Result = ((VegKg * VegKgPrice) + (FruitKg * FruitKgPrice)) / 1.94;
+            Console.WriteLine("{0:F2}",Result);
+        }
+    }
+}
